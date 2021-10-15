@@ -1,7 +1,9 @@
 .Navbar {
-    background: black !important;
+    background: $primary_color !important;
+    color: $text_secondary_color !important;
 
     li:hover{
-        background: $third_color !important;
+        color: $text_secondary_color !important;
+        background: $secondary_color !important;
     }
 }
