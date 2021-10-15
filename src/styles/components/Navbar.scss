@@ -1,9 +1,19 @@
-.Navbar {
+.NavbarComp {
     background: $primary_color !important;
     color: $text_secondary_color !important;
+
+    li {
+        text-align: center;
+        width: 100px !important;
+    }
 
     li:hover{
         color: $text_secondary_color !important;
         background: $secondary_color !important;
     }
+    .dropdown-menu {
+        background: $primary_color !important;
+        left: -44px !important;
+    }
+    
 }
