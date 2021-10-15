@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: $primary_color;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: $text_secondary_color;
+}
+
+.c-ponter {
+    cursor: pointer;
+}
