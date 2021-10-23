@@ -1,15 +1,19 @@
 .NavbarComp {
     background: $primary_color !important;
     color: $text_secondary_color !important;
+    
+    
 
     li {
         text-align: center;
         width: 100px !important;
+        color: white !important;
     }
-
     li:hover{
-        color: $text_secondary_color !important;
-        background: $secondary_color !important;
+        background: $third_color !important;
+        color: $text_primary_color!important;
+        width: fit-content ;
+        border-radius: 50px;
     }
     .dropdown-menu {
         background: $primary_color !important;
