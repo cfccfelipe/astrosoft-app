@@ -6,7 +6,9 @@ export const GET_ALL_PROYECTS = gql`
 			id
 			name
 			members {
+				_id
 				user_id {
+					_id
 					fullname
 					email
 				}
@@ -30,12 +32,12 @@ export const GET_PROJECT_BY_ID = gql`
 		}
 `;
 export const GET_ALL_USERS = gql `
-
 	query getAllUsers{
 		getAllUsers{
-		_id
-		fullname
-		email
+			id
+			_id
+			fullname
+			email
 	}
 }
 

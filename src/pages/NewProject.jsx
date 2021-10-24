@@ -1,6 +1,6 @@
 import {CREATE_PROJECT} from '../gql/mutationsGql';
 import { useMutation } from '@apollo/client';
-
+import { Link } from 'react-router-dom';
 export const NewProject = () =>{
     let name;
     const [newProject, {data,loading, error}] =useMutation(CREATE_PROJECT);
@@ -15,6 +15,12 @@ export const NewProject = () =>{
             e.preventDefault();
             newProject({variables: {name: name.value}});
             name.value='';
+            if (error){
+                alert(error)
+            }else{
+                alert("Agregado")
+            }
+            setTimeout(window.location.reload(true),30000);
         }}>        
             <div className="mb-3">
                 <label className="form-label">Nombre del proyecto</label>
@@ -22,6 +28,9 @@ export const NewProject = () =>{
                     name= node;}} className="form-control"/>
             </div>
             <button type="submit" className="btn btn-primary">Guardar</button>
+            <Link to={`/projects`}>
+                <button type="submit" className="btn btn-primary">Volver</button>
+            </Link>
         </form>
     </div>
     )

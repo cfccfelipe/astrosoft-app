@@ -41,6 +41,11 @@ const Navbar = () => {
 								Proyectos
 							</li>
 						</Link>
+						<Link to='/users'>
+							<li className='nav-item nav-link active'>
+								Usuarios
+							</li>
+						</Link>
 						<li className='nav-item dropdown'>
 							<a
 								className='nav-link dropdown-toggle'
